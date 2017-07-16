@@ -1,0 +1,29 @@
+h1
+{
+	color: White;
+	text-shadow: 5px 5px 5px green;
+	font-size: 4em;
+	text-decoration: underline;
+}
+.img-responsive
+{
+	max-width: 300;
+	height: auto;
+}
+.img_text
+{
+	border: 6px solid black; 
+	border-radius:15px;
+	max-width: 900;
+	height: auto;
+}
+.img_text2
+{
+	max-width: 900;
+	height: auto;
+}
+p
+{
+	color: black;
+	font-size: 1.2em;
+}

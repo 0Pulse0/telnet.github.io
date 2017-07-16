@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+function Image1_click()
+{
+	ystr.src="Images/Ystr_red.jpg";
+	opt.src="Images/opt_green.jpg";
+	prim.src="Images/Prim_green.jpg";
+	ystroistvo.style.display="block";
+	option.style.display="none";
+	primen.style.display="none";
+	opt.disabled=fasle;
+}
+function Image2_click()
+{
+	ystr.src="Images/Ystr_green.jpg";
+	opt.src="Images/opt_red.jpg";
+	prim.src="Images/Prim_green.jpg";
+	ystroistvo.style.display="none";
+	option.style.display="block";
+	primen.style.display="none";
+}
+function Image3_click()
+{
+	ystr.src="Images/Ystr_green.jpg";
+	opt.src="Images/opt_green.jpg";
+	prim.src="Images/Prim_red.jpg";
+	ystroistvo.style.display="none";
+	option.style.display="none";
+	primen.style.display="block";
+}
+</script>
+</head>
+<body background="Images/Main_Fon.jpg" style="background-size: cover;">
+<h1 align="center"> Всё о TELNET </h1> 
+<table align="center" >
+<tr>
+<ul id="menu">
+          <td>  <li id=""><a href="#"> <img src="Images/Ystr_red.jpg" id="ystr" class="img-responsive" id="img1" onClick="Image1_click()" /></a> </li> </td>
+          <td>  <li id=""><a href="#"> <img src="Images/opt_green.jpg" class="img-responsive" id="opt" onClick="Image2_click()" /></a> </li> </td>
+          <td>  <li id=""><a href="#"> <img src="Images/Prim_green.jpg" class="img-responsive" id="prim" onClick="Image3_click()"/></a> </li> </td>
+        </ul>
+</tr>
+</table>
+<table align="center">
+<td class="img_text" bgcolor="white" style="display:block;" id="ystroistvo" ><b ><p> Хотя в сессии Telnet выделяют клиентскую и серверную стороны, протокол на самом деле полностью симметричен. После установления транспортного соединения (как правило, TCP) оба его конца играют роль «сетевых виртуальных терминалов» (англ. Network Virtual Terminal, NVT), обменивающихся двумя типами данных:
+
+Прикладными данными (то есть данными, которые идут от пользователя к текстовому приложению на стороне сервера и обратно);
+Командами протокола Telnet, частным случаем которых являются опции, служащие для уяснения возможностей и предпочтений сторон.
+Хотя Telnet-сессии, выполняющейся по TCP, свойственен полный дуплекс, NVT должен рассматриваться как полудуплексное устройство, работающее по умолчанию в буферизированном строковом режиме.
+
+Прикладные данные проходят через протокол без изменений[2], то есть на выходе второго виртуального терминала мы видим именно то, что было введено на вход первого. С точки зрения протокола данные представляют просто последовательность байтов (октетов), по умолчанию принадлежащих набору ASCII, но при включенной опции Binary — любых. Хотя были предложены расширения для идентификации набора символов [3], но на практике ими не пользуются.
+
+Все значения октетов прикла</p> </b> <img src="Images/Telnet_Logo.jpg"  class="img_text2"> </img></td>
+</table>
+<table align="center">
+<td class="img_text" bgcolor="white" style="display:none;" id="option" ><b ><p> Протокол предоставляет по умолчанию минимальную функциональность и набор расширяющих её опций. Принцип оговоренных опций требует проводить переговоры при включении каждой из опций. Одна сторона инициирует запрос, а другая сторона может либо принять, либо отвергнуть предложение. Если запрос принимается, то опция немедленно вступает в силу. Опции описаны отдельно от протокола как такового, и их поддержка программным обеспечением произвольна. Клиенту протокола (сетевому терминалу) предписывается отвергать запросы на включение неподдерживаемых и неизвестных опций.</p> </b><img src="Images/Telnet_Logo.jpg"  class="img_text2"> </img></td>
+</table>
+<table align="center">
+<td class="img_text" bgcolor="white" style="display:none;" id="primen" ><b ><p> Исторически Telnet служил для удалённого доступа к интерфейсу командной строки операционных систем. Впоследствии его стали использовать для прочих текстовых интерфейсов, вплоть до игр MUD и анимированного ASCII-art. Теоретически, даже обе стороны протокола могут являться не только людьми, но и программами.
+
+Иногда клиенты telnet используются для доступа к другим протоколам на основе транспорта TCP, см. Telnet и другие протоколы.
+
+Протокол telnet используется в управляющем соединении FTP, то есть заходить на сервер командой telnet ftp.example.net ftp для выполнения отладки и экспериментов не только возможно, но и правильно (в отличие от применения клиентов telnet для доступа к HTTP, IRC и большинству других протоколов).
+
+Telnet, наряду с HTTP, является основным протоколом для удалённой работы с сетевым оборудованием (управляемые коммутаторы и маршрутизаторы) и, в отличие от веб-интерфейса, предоставляет полный доступ к функциональным возможностям устройства, но при этом требует от специалиста культуры работы с командной строкой.</p> </b><img src="Images/Telnet_Logo.jpg"  class="img_text2"> </img></td>
+</table>
+
+</body>
+</html>
